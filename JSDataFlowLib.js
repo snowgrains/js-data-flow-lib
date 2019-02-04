@@ -1,6 +1,6 @@
 /*
     SnowGrains Javascript Data Flow Library
-    
+
     Helps controlling data flow in your Javascript based application and
     lightweight QML applications.
 
@@ -34,7 +34,7 @@
 
 .pragma library
 
-var SGFlux = function(){
+var JSDataFlow = function(){
     var actions=[]
     var stores=[]
     var middlewares=[]
@@ -49,9 +49,9 @@ var SGFlux = function(){
             return
 
         if (loglevel >=level)
-            console.log("SGFLUX INFO:"+txt)
+            console.log("JSDATAFLOW INFO:"+txt)
         if (loglevel >= level)
-            console.log("SGFLUX ERROR:"+txt)
+            console.log("JSDATAFLOW ERROR:"+txt)
     }
     this.setTimer = function(externalTimer){
         timer = externalTimer
